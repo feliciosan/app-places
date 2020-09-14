@@ -1,6 +1,6 @@
 # App Places
 
-Aplication that consumes google places.
+Aplication that consumes google places api.
 
 ## Built With
 

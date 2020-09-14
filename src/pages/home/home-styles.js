@@ -31,6 +31,7 @@ export const PageContent = styled.div`
 
     @media (max-width: 600px) {
         padding: 7.5px;
+        flex-direction: column;
     }
 `;
 
