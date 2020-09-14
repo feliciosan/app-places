@@ -1,11 +1,13 @@
 # App Places
-
 Aplication that consumes google places api.
 
-## Built With
+## Integrated with reqres.in fake API
+- Email: eve.holt@reqres.in
+- Password: cityslicka
 
--   [ReactJs](https://reactjs.org/)
+## Built with:
+-  [ReactJs](https://reactjs.org/)
+-  reqres.in
 
-## Authors
-
+## Author:
 -   [Felício Santos](https://github.com/feliciosan)
