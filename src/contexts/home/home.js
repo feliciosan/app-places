@@ -2,8 +2,8 @@ import React, { createContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 const defaultCoords = {
-    lat: -33.8670522,
-    lng: 151.195736,
+    lat: -8.0648287,
+    lng: -34.8738834,
 };
 
 const HomeContext = createContext();

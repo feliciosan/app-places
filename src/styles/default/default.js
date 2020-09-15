@@ -159,7 +159,7 @@ const getPropColors = (color) => {
         yellow: '#d4bd1b',
     };
 
-    return colors[color] || '#19a3d4';
+    return colors[color] || '#eaeaea';
 };
 
 export const Button = styled.button`
@@ -167,7 +167,7 @@ export const Button = styled.button`
     border-radius: 4px;
     background: ${(props) => getPropColors(props.color)};
     width: 100%;
-    color: #f2f2f2;
+    color: white;
     font-weight: 600;
     border: none;
     font-size: 15px;
@@ -200,5 +200,5 @@ export const FormAlert = styled.div`
     margin-bottom: 20px;
     border-radius: 4px;
     line-height: 20px;
-    color: #f2f2f2;
+    color: white;
 `;

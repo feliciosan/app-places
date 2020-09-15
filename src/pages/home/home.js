@@ -1,8 +1,8 @@
 import React from 'react';
-import Maps from '../../components/maps/maps';
-import SearchPlaces from '../../components/search-places/search-places';
-import ListPlaces from '../../components/favorite-list/favorite-list';
-import PlaceInfo from '../../components/place-info/place-info';
+import Maps from './home-components/maps/maps';
+import SearchPlaces from './home-components/search-places/search-places';
+import ListPlaces from './home-components/favorite-list/favorite-list';
+import PlaceInfo from './home-components/place-info/place-info';
 import scriptLoader from 'react-async-script-loader';
 import PropTypes from 'prop-types';
 

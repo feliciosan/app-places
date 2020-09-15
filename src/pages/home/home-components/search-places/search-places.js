@@ -3,8 +3,8 @@ import PlacesAutocomplete, {
     geocodeByAddress,
     getLatLng,
 } from 'react-places-autocomplete';
-import { HomeContext } from '../../contexts/home/home';
-import { Input } from '../../styles/default/default';
+import { HomeContext } from '../../../../contexts/home/home';
+import { Input } from '../../../../styles/default/default';
 import {
     SearchPlacesSuggest,
     SearchPlacesBox,

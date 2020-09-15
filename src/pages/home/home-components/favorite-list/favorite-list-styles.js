@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Button } from '../../styles/default/default';
+import { Button } from '../../../../styles/default/default';
 
 export const FavoriteListBox = styled.ul`
     padding: 20px;

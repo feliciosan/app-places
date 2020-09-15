@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Button, InputCheckbox } from '../../styles/default/default';
+import { Button, InputCheckbox } from '../../../../styles/default/default';
 
 export const PlaceInfoBox = styled.div`
     padding: 20px;

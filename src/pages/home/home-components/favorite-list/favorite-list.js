@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import StarRatings from 'react-star-ratings';
 
-import { HomeContext } from '../../contexts/home/home';
-import { Button } from '../../styles/default/default';
+import { HomeContext } from '../../../../contexts/home/home';
+import { Button } from '../../../../styles/default/default';
 import {
     FavoriteListBox,
     FavoriteListItem,

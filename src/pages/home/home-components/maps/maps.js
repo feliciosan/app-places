@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 
 import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
-import { HomeContext } from '../../contexts/home/home';
+import { HomeContext } from '../../../../contexts/home/home';
 
-const Maps = withGoogleMap(() => {
+const Maps = () => {
     const { lat, lng } = useContext(HomeContext);
 
     return (
@@ -15,6 +15,6 @@ const Maps = withGoogleMap(() => {
             )}
         </>
     );
-});
+};
 
-export default Maps;
+export default withGoogleMap(Maps);

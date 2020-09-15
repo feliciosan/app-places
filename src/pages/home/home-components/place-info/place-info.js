@@ -2,13 +2,13 @@ import React, { useContext, useState } from 'react';
 import { useEffect } from 'react';
 import StarRatings from 'react-star-ratings';
 
-import { HomeContext } from '../../contexts/home/home';
+import { HomeContext } from '../../../../contexts/home/home';
 import {
     Textarea,
     InputCheckbox,
     Button,
     FormAlert,
-} from '../../styles/default/default';
+} from '../../../../styles/default/default';
 import {
     PlaceInfoBox,
     PlaceInfoTitle,
@@ -27,7 +27,6 @@ const PlaceInfo = () => {
     } = useContext(HomeContext);
     const [rating, setRating] = useState();
     const [comment, setComment] = useState();
-    const [isFavorited, setIsFavorited] = useState();
     const [success, setSuccess] = useState(false);
 
     const handleChangeFavorite = () => {
@@ -35,7 +34,6 @@ const PlaceInfo = () => {
 
         favoritePlaces[selectedPlace.placeId] = selectedPlace;
         setFavorites(favoritePlaces);
-        setIsFavorited(true);
 
         localStorage.setItem('favorites', JSON.stringify(favoritePlaces));
     };
@@ -67,7 +65,6 @@ const PlaceInfo = () => {
     };
 
     useEffect(() => {
-        setIsFavorited(false);
         setSuccess(false);
         setComment('');
         setRating(5);
@@ -98,7 +95,7 @@ const PlaceInfo = () => {
                     />
                     <PlaceInfoActions>
                         <PlaceInfoFavorite>
-                            {isFavorited ? (
+                            {favorites[selectedPlace.placeId] ? (
                                 <span>Favoritado!</span>
                             ) : (
                                 <>
